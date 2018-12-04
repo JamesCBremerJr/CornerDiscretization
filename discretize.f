@@ -133,8 +133,8 @@ c
 c       Compare the obtained potential and the actual potential at a point 
 c
         ntest   = 1
-        cx      = 0.999d0
-        cy      = 0.988d0
+        cx      = 1.0d0-1.0d-7
+        cy      = 1.0d0-1.0d-7
 c
         eval_test(1,1) = 1.0d0
         eval_test(2,1) = cx
