@@ -1,0 +1,44 @@
+This directory contains the Spiffy solver, a skeletonization based code for
+solving the integral equations of scattering theory on planar domains with 
+corners.  
+
+The following files make up the core of the solver:
+
+1.  The file print.f contains the output routines which are used throughout
+the solver.
+
+2.  The file utils.f contains a few basic utility routines (e.g., subroutines
+for sorting).
+
+3.  The file plot.f provides rudimentry plotting facilities. 
+
+4.  The file qrsolv.f contains a code of V. Rokhlin for solving linear systems
+of equations via the QR decomposition.
+
+4.  The file legendre.f contains code for constructing Gauss-Legendre
+quadratures and for manipulating Legendre expansions.  It is a slightly
+modified version of V. Rokhlin's legeexps.f.
+
+5.  The file arcmap.f contains code for producing parameterization independent
+quadratures on planar curves.  In particular, it contain a subroutine for mapping 
+quadratures specified in the arclength variable to those given in a user-
+specified parameterization variable.  It is a slightly modified version of 
+V. Rokhlin's anaresa code.
+
+6.  The file hank103.f contains V. Rokhlin's code for the evaluation of
+Hankel functions of the first kind of order 0 and 1.
+
+7.  The file kernels.f contains routines for evaluating the kernels of various
+integral operators associated with the boundary value problems of scattering
+theory.  These routines are *unaccelerated* --- that is, they evaluate Hankel 
+functions naively.
+
+8.  The file curves.f contains routines which supply parameterizations of 
+various planar domains with corners.  It includes, among other things, routines
+for generating planar domains with a single corner point with angle specified
+by the user.
+
+9.  The file discretize.f contains a simple code for discretizing integral 
+operators whose kernels are logarithmically singular and which are given on
+planar domains with corners points.
+
