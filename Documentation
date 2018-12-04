@@ -1,8 +1,6 @@
-This directory contains the Spiffy solver, a skeletonization based code for
-solving the integral equations of scattering theory on planar domains with 
-corners.  
-
-The following files make up the core of the solver:
+This package contains code discretizing certain integral equations on
+planar domains with corner points.  The following files comprise the
+package:
 
 1.  The file print.f contains the output routines which are used throughout
 the solver.
